@@ -1,0 +1,17 @@
+{
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "/lib/JVM/Java-21/bin/javaw.exe",
+        "default": true
+      }
+      ,{
+        "name": "JavaSE-11",
+        "path": "/lib/JVM/Java-21/bin/javaw.exe"
+      }
+      ,{
+        "name": "JavaSE-17",
+        "path": "/lib/JVM/Java-21/bin/javaw.exe"
+      } 
+    ] 
+  }
