@@ -7,7 +7,7 @@ const musicLibrary = [
   // Add more music files here
 ];
 
-// Play a random song on page load
+// Play a random song on page load (click on page before audio loads is required)
 window.onload = function() {
   const randomIndex = Math.floor(Math.random() * musicLibrary.length);
   const randomSong = musicLibrary[randomIndex];
