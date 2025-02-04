@@ -29,7 +29,7 @@
         }
 
         #title-image {
-            width: 300px; /* Adjust as needed */
+            width: 300px;
         }
 
           @font-face {
@@ -51,7 +51,7 @@
     }
 
     main {
-      flex-grow: 1; /* Allow main content to grow */
+      flex-grow: 1;
     }
 
     footer {
@@ -68,7 +68,6 @@
 <script language="vbscript">
   Option Explicit
 
-  ' Function to start the HTTP server on port 8080 using Python
   Sub StartServer()
     On Error Resume Next 
     Set objShell = CreateObject("Wscript.Shell")
@@ -77,7 +76,6 @@
       MsgBox "Failed to start HTTP server on port 8080."
     Else
       MsgBox "HTTP server started successfully on port 8080."
-      ' Open "index.html" in default browser
       Dim objShell2
       Set objShell2 = CreateObject("Wscript.Shell")
       objShell2.Run "cmd /c start http://localhost:8080/index.html", 0, True 
@@ -85,12 +83,7 @@
     On Error GoTo 0
   End Sub
 
-  ' Function to stop the HTTP server (Python's http.server has no dedicated stop command)
   Sub StopServer()
-    ' Since Python's http.server runs as a single-threaded process, 
-    ' we can't directly stop it. 
-    ' This will likely require terminating the Python process.
-    ' This is a simplified approach and might not be the most robust solution.
     On Error Resume Next 
     Set objShell = CreateObject("Wscript.Shell")
     objShell.Run "taskkill /IM python.exe /F", 0, True 
