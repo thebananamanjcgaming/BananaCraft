@@ -1,4 +1,4 @@
-public class TestProgram {
+public class errorHandler {
 
     public static void main(String[] args) {
         String name = getInput("Username?");
